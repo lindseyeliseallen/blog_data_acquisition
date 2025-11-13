@@ -72,8 +72,29 @@ df['comment_ratio'] = df['comment_count'] / df['view_count']
 This helped me see that some categories, like comedy, had higher engagement compared to others.
 
 4. **Visualizations**
+```python
+df.groupby('category_name')['like_ratio'].mean().sort_values(ascending=False).plot(kind='barh', title='Average Like Ratio by Category')
+plt.show()
+```
 
-5. **Observations**
+![Graph of Average Like Ratio by Category](average_like_ratio.png)
+
+*Figure 1: Graph of Average Like Ratio by Category.*
+
+```python
+views_by_cat = df.groupby('category_name')['view_count'].mean().sort_values(ascending=False)
+views_by_cat.plot(kind='bar', title='Average Views by YouTube Category')
+plt.xlabel('Category')
+plt.ylabel('Views')
+plt.show()
+```
+
+![Graph of Average Views by Category](average_views.png)
+
+*Figure 2: Graph of Average Views by Category.*
+
+6. **Observations**
+   The film & animation category has the highest average views. The comedy category has the highest average like ratio by category. Both of these observations are made obvious by the graphs. 
 
 
 
