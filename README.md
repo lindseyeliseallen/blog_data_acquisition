@@ -54,3 +54,26 @@ After gathering the data, I created some plots and tables to answer my main ques
 I used `pandas` to get a quick summary of the numeric columns:  
 ```python
 df.describe()
+```
+
+2. **Count of videos by category**
+To see which categories appeared most often in the trending list:
+```python
+df['category_name'].value_counts()
+```
+Gaming was by far the category with the highest number of trending videos, with music following.
+
+3. **Engagement ratios**
+I calculated ratios of likes and comments relative to views to see which videos got the most engagement:
+```python
+df['like_ratio'] = df['like_count'] / df['view_count']
+df['comment_ratio'] = df['comment_count'] / df['view_count']
+```
+This helped me see that some categories, like comedy, had higher engagement compared to others.
+
+4. **Visualizations**
+
+5. **Observations**
+
+
+
