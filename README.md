@@ -94,7 +94,19 @@ plt.show()
 *Figure 2: Graph of Average Views by Category.*
 
 6. **Observations**
-   The film & animation category has the highest average views. The comedy category has the highest average like ratio by category. Both of these observations are made obvious by the graphs. 
+   The film & animation category has the highest average views. The comedy category has the highest average like ratio by category. Both of these observations are made obvious by the graphs.
 
+---
+## Further Information and Resources
 
+If you want to learn more about using the YouTube API or how to use these steps with your own datasets, here are some helpful resources:
 
+- [YouTube Data API Documentation](https://developers.google.com/youtube/v3) – Official guide for accessing video data and understanding API requests.    
+- [Pandas Documentation](https://pandas.pydata.org/docs/) – For working with tabular data, calculating statistics, and saving to CSV.  
+- [dotenv Python Package](https://pypi.org/project/python-dotenv/) – To keep API keys safe and load them into your code securely.
+
+## Access the Code
+
+You can find all of my Python code for this project in my GitHub repository:  
+
+[GitHub Repository: YouTube Trending Videos Project](https://github.com/lindseyeliseallen/data_acquisition_blog.git)  
